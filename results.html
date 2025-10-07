@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic Search Results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3">
+ <span class="text-sm text-blue-600 font-medium" style="font-family: 'SF Pro', sans-serif; font-weight: 500; font-size: 16px;">Done</span>
+    <button>
+      <img src="images/share.svg" alt="Share" class="w-5 h-5 text-gray-600" />
+    </button>
+  </header>
+
+     <!-- Search Bar -->
+  <div class="px-4 flex items-center mt-2 mb-2 space-x-2 search-bar-container">
+      <img src="images/search-results-icon.svg" alt="Search Results Icon" class="w-6 h-6 mr-2" />
+      <h2 style="font-family: Georgia, serif; font-size: 20px; line-height: 25px;">Twitter vs Bluesky</h2>
+    </div>
+
+
+  <!-- Result Summary -->
+  <div class="px-4 text-md text-gray-600 mb-2 mt-4">
+    <span class="font-bold text-gray-800">3 results from 2 articles</span><br />
+    <span>Snippets pulled from original Wikipedia articles</span>
+  </div>
+
+  <!-- Cards -->
+  <div class="space-y-3 px-4 pb-6">
+    <!-- Card Example -->
+  <div id="cat-article-card" class="bg-white rounded-xl shadow-sm border p-4 cursor-pointer relative pb-12">
+      <!-- Title -->
+      <a href="full-article.html#comparison" class="block focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+        <div class="bg-white p-2 shadow rounded flex items-center gap-2 mb-3" style="box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);">
+          <div>
+            <p class="text-sm" style="font-family: 'SF Pro', sans-serif; font-size: 15px; line-height: 20px;">Bluesky</p>
+            <p class="text-xs text-gray-500" style="font-family: 'SF Pro', sans-serif; font-size: 13px; line-height: 18px;">Social platform</p>
+          </div>
+          <img src="images/bluesky-Image.png" alt="thumbnail" class="w-10 h-10 rounded object-cover ml-auto" />
+        </div>
+      </a>
+      <!-- Content with fade -->
+      <div style="position:relative; max-height: 800px; overflow:hidden;">
+        <p class="text-sm leading-relaxed" style="font-size:16px; line-height:26px;">
+          <strong>Bluesky is largely analogous to <span class="text-blue-600">Twitter</span> in its structure. Users can send 300-character text messages, images, and video in short posts. Users can reply, repost, quote post and like these posts. Frequent users have called posts on the platform "skeets", a <span class="text-blue-600">portmanteau</span> of "sky" and <span class="text-blue-600">"tweets"</span>, despite CEO <span class="text-blue-600">Jay Graber </span>'s vigorous disapproval of the term. Bluesky offers a domain name-based handle system via the <span class="text-blue-600">AT Protocol</span>, allowing users to self-verify an account's legitimacy and identity by proving ownership of a domain name through a <span class="text-blue-600">DNS text record</span> or HTTPS page in lieu of a "blue check" system that other platforms use. For example, The Washington Post uses their domain "washingtonpost.com" as their handle. The specification doesn't handle changes in status of the domain names. Unlike Twitter, Bluesky allows users far greater customizability of the experience, enabling users to choose custom algorithmic feeds and moderation services. It also allows the usage of services through custom clients, a practice Twitter offered until January 2023.</strong> 
+        </p>
+        <div style="position:absolute; left:0; right:0; bottom:0; height:2.5em; pointer-events:none; background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 100%);"></div>
+      </div>
+
+     <!-- Feedback area -->
+    <div class="absolute bottom-2 right-2 mt-4">
+      <button class="flex items-center gap-2 rounded-lg px-3 py-2">
+        <img src="images/thumbsup.svg" alt="Thumbs up" class="w-4 h-4" />
+        <img src="images/thumbsdown.svg" alt="Thumbs down" class="w-4 h-4" />
+      </button>
+    </div>
+  </div>
+    
+
+    <!-- Bluesky -->
+    <div id="cat-article-card" class="bg-white rounded-xl shadow-sm border p-4 cursor-pointer relative pb-12">
+      <!-- Title -->
+        <div class="bg-white p-2 shadow rounded flex items-center gap-2 mb-3" style="box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);">
+          
+          <div>
+            <p class="text-sm" style="font-family: 'SF Pro', sans-serif; font-size: 15px; line-height: 20px;">Bluesky</p>
+            <p class="text-xs text-gray-500" style="font-size:13px;">Social platform</p>
+          </div>
+       
+          <img src="images/bluesky-Image.png " alt="thumbnail" class="w-10 h-10 rounded object-cover ml-auto" />
+        </div>
+      <!-- Content with fade -->
+      <div style="position:relative; max-height: 270px; overflow:hidden;">
+        <p class="text-sm leading-relaxed" style="font-size:16px; line-height:26px;">
+          <strong>Bluesky began in 2019 as a research initiative at Twitter, becoming an independent company in 2021.</strong> Development for the social app accelerated
+        </p>
+        <div style="position:absolute; left:0; right:0; bottom:0; height:2.5em; pointer-events:none; background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 100%);"></div>
+      </div>
+
+       <!-- Feedback area -->
+       <div class="absolute bottom-2 right-2 mt-4">
+      <button class="flex items-center gap-2 rounded-lg px-3 py-2">
+        <img src="images/thumbsup.svg" alt="Thumbs up" class="w-4 h-4" />
+        <img src="images/thumbsdown.svg" alt="Thumbs down" class="w-4 h-4" />
+      </button>
+    </div>
+    </div>
+
+    <!-- Twitter -->
+    <div id="cat-article-card" class="bg-white rounded-xl shadow-sm border p-4 cursor-pointer relative pb-12">
+      <!-- Title -->
+        <div class="bg-white p-2 shadow rounded flex items-center gap-2 mb-3" style="box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);">
+          <div>
+            <p class="text-sm" style="font-family: 'SF Pro', sans-serif; font-size: 15px; line-height: 20px;">Twitter</p>
+           <p class="text-xs text-gray-500" style="font-size:13px;">Social networking service</p>
+          </div>
+          <img src="images/x-Image.png" alt="thumbnail" class="w-10 h-10 rounded object-cover ml-auto border border-gray-300" style="border-width:1px; border-style:solid; border-color:#d1d5db;" />
+        </div>
+
+      <!-- Content with fade -->
+      <div style="position:relative; max-height: 270px; overflow:hidden;">
+        <p class="text-sm leading-relaxed" style="font-size:16px; line-height:26px;">
+         <strong>In 2021, Twitter began the research phase of <span class="text-blue-600">Bluesky</span>, an open source decentralized social media protocol where users can choose which <span class="text-blue-600">algorithmic curation</span> they want. </strong> The same year, Twitter also released 
+        </p>
+        <div style="position:absolute; left:0; right:0; bottom:0; height:2.5em; pointer-events:none; background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 100%);"></div>
+      </div>
+
+       <!-- Feedback area -->
+       <div class="absolute bottom-2 right-2 mt-4">
+      <button class="flex items-center gap-2 rounded-lg px-3 py-2">
+        <img src="images/thumbsup.svg" alt="Thumbs up" class="w-4 h-4" />
+        <img src="images/thumbsdown.svg" alt="Thumbs down" class="w-4 h-4" />
+      </button>
+    </div>
+    </div>
+
+  <!-- Sources -->
+  <footer class="px-0 pb-6">
+    <h2 class="text-md text-gray-800 font-bold mb-2">Sources</h2>
+    <div class="flex gap-4 overflow-x-auto scrollbar-hide pb-2" style="scroll-snap-type: x mandatory;">
+  <div class="bg-white p-4 shadow rounded flex items-center gap-2 mb-0 flex-shrink-0" style="box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07); width:70vw; max-width:420px; scroll-snap-align: start; height:56px;">
+        <div>
+          <p class="text-sm font-medium">Bluesky</p>
+          <p class="text-xs text-gray-500" style="font-size:13px;">Social platform</p>
+        </div>
+        <img src="images/bluesky-Image.png" alt="thumbnail" class="w-10 h-10 rounded object-cover ml-auto" />
+      </div>
+  <div class="bg-white p-4 shadow rounded flex items-center gap-2 mb-0 flex-shrink-0" style="box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07); width:70vw; max-width:420px; scroll-snap-align: start; height:56px;">
+        <div>
+          <p class="text-sm font-medium">Twitter</p>
+          <p class="text-xs text-gray-500" style="font-size:13px;">Social networking service</p>
+        </div>
+        <img src="images/x-Image.png" alt="thumbnail" class="w-10 h-10 rounded object-cover ml-auto  border border-gray-300" />
+      </div>
+
+    </div>
+    <style>
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  </footer>
+</body>
+</html>
